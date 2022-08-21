@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(154, 102, 217);
+
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 700px;
+}
+
+.items {
+    height: 4rem;
+    width: 15rem;
+    margin: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    background-color: rgb(92, 55, 141);
+}

@@ -1,0 +1,82 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(224, 220, 220);
+}
+
+.first {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: white;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px black;
+    opacity: 1;
+}
+
+.first p {
+    user-select: none;
+}
+
+.first:active {
+    transform: translate(-50%, -50%) scale(0.98);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.event {
+    background-color: white;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px black;
+    height: 50px;
+    width: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.event.key::before {
+    content: 'event.key';
+    position: absolute;
+    font-size: 12px;
+    transform: translate(0px, -35px);
+    color: rgb(0, 0, 0);
+}
+
+.event.keyCode::before {
+    content: 'event.keyCode';
+    position: absolute;
+    font-size: 12px;
+    transform: translateY(-35px);
+    color: rgb(0, 0, 0);
+}
+
+.event.code::before {
+    content: 'event.code';
+    position: absolute;
+    font-size: 12px;
+    transform: translate(0px, -35px);
+    color: rgb(0, 0, 0);
+}
