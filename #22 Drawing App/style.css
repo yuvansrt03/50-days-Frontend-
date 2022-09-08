@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(221, 217, 217);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 550px;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.canvas {
+    background-color: white;
+}
+
+.tools {
+    flex-wrap: wrap;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(53, 116, 170, 255);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btn {
+    margin: 3px;
+}
+
+.minus {
+    margin-left: 20px;
+}
+
+.del {
+    margin-right: 20px;
+}
+
+.color {
+    flex-grow: 1;
+}

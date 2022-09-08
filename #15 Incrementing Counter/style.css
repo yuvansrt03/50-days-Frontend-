@@ -1,0 +1,89 @@
+*,
+::after,
+::before {
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(134, 71, 163, 255);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 45vw;
+}
+
+.twitter {
+    font-family: 'Inconsolata', monospace;
+    font-size: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.youtube {
+    font-family: 'Inconsolata', monospace;
+    font-size: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.facebook {
+    font-family: 'Inconsolata', monospace;
+    font-size: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.twitter::after {
+    content: 'Twitter Followers';
+    position: absolute;
+    font-size: 15px;
+    padding-top: 120px;
+    letter-spacing: 1px;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+.youtube::after {
+    content: 'Youtube Subscribers';
+    position: absolute;
+    font-size: 15px;
+    padding-top: 120px;
+    letter-spacing: 1px;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+.facebook::after {
+    content: 'Facebook Fans';
+    position: absolute;
+    font-size: 15px;
+    padding-top: 120px;
+    letter-spacing: 1px;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+.fa-style {
+    font-size: 30px;
+}
+
+@media only screen and (max-width:1024px) {
+    .container {
+        height: 70vh;
+        flex-direction: column;
+    }
+}

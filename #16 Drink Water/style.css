@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: rgba(39, 132, 225, 255);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.canContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.can {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(235, 243, 253, 255);
+    height: 40px;
+    width: 30px;
+    margin: 10px;
+    color: rgba(31, 87, 189, 255);
+    font-size: 12px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px rgba(31, 87, 189, 255) solid;
+    cursor: pointer;
+}
+
+.can.clicked {
+    background-color: rgba(39, 132, 225, 255);
+    color: rgba(235, 243, 253, 255);
+}
+
+.bottle {
+    height: 300px;
+    width: 140px;
+    background-color: white;
+    margin: 20px;
+    box-sizing: border-box;
+    border: 5px rgba(31, 87, 189, 255) solid;
+    position: relative;
+    display: flex;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.left {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: hidden;
+    text-align: center;
+    transition: 1s
+}
+
+.left p {
+    color: rgba(12, 74, 185, 255);
+    font-size: 15px;
+}
+
+.drankpercen {
+    height: 50%;
+    width: 101%;
+    background-color: rgba(87, 166, 247, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.drankpercen p {
+    color: rgba(12, 74, 185, 255);
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

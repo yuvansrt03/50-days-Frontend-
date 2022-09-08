@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: max-content;
+    width: max-content;
+    overflow: hidden;
+}
+
+button {
+    padding: 10px 10px;
+    background-color: purple;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    width: 150px;
+}
+
+button p {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.box {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 1;
+    z-index: 1;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    animation: scale .4s linear;
+
+}
+
+@keyframes scale {
+    to {
+        transform: translate(-50%, -50%) scale(5);
+        opacity: .5;
+    }
+}
