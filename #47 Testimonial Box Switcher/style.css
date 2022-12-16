@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: none;
+    position: relative;
+    height: max-content;
+    width: 350px;
+    background-color: rgba(56, 99, 224, 255);
+    padding: 40px 60px 20px 60px;
+    border-radius: 20px;
+
+}
+
+.container.active {
+    display: inline-block;
+}
+
+.loading-bar {
+    height: 3px;
+    width: 1px;
+    background-color: white;
+    margin-bottom: 20px;
+    transition: width 5s linear;
+}
+
+.loading-bar.end {
+    width: 100%;
+}
+
+.quote-left {
+    transform: translateX(-100%);
+}
+
+.quote-right {
+    transform: translateX(350px);
+}
+
+.quote-left,
+.quote-right {
+    font-size: 40px;
+    position: absolute;
+    color: rgba(116, 147, 238, 255);
+}
+
+.testimonial {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.profile {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.picture {
+    height: 60px;
+    width: 60px;
+    background-image: url('Images/social-media-profile-photos-3.webp');
+    background-position: center;
+    background-size: 100px;
+    border-radius: 50%;
+}
+
+.info {
+    width: 100px;
+    height: 35px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.name {
+    font-weight: 900;
+}

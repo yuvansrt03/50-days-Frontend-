@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="quiz active">
+        <h2>Which Language runs in a web browser</h2>
+        <ul class="options">
+            <li><input type="radio" ans="correct" name="a" id="q1o1"><label for="q1o1">Java</label></li>
+            <li><input type="radio" ans="wrong" name="a" id="q1o2"><label for="q1o2">C</label></li>
+            <li><input type="radio" ans="wrong" name="a" id="q1o3"><label for="q1o3">Python</label></li>
+            <li><input type="radio" ans="wrong" name="a" id="q1o4"><label for="q1o4">Javascript</label></li>
+        </ul>
+        <input type="submit" class="submit">
+    </div>
+    <div class="quiz">
+        <h2>What does CSS Stand For</h2>
+        <ul class="options">
+            <li><input type="radio" ans="wrong" name="a" id="q2o1"><label for="q2o1">Central Style Sheets</label></li>
+            <li><input type="radio" ans="correct" name="a" id="q2o2"><label for="q2o2">Cascading Style Sheets</label>
+            </li>
+            <li><input type="radio" ans="wrong" name="a" id="q2o3"><label for="q2o3">Cascading Simple Sheets</label>
+            </li>
+            <li><input type="radio" ans="wrong" name="a" id="q2o4"><label for="q2o4">Cars SUVs sailboats</label></li>
+        </ul>
+        <input type="submit" class="submit">
+    </div>
+    <div class="quiz">
+        <h2>What Year was Javascript Launched</h2>
+        <ul class="options">
+            <li><input type="radio" ans="correct" name="a" id="q3o1"><label for="q3o1">1996</label></li>
+            <li><input type="radio" ans="wrong" name="a" id="q3o2"><label for="q3o2">1995</label>
+            </li>
+            <li><input type="radio" ans="wrong" name="a" id="q3o3"><label for="q3o3">1994</label>
+            </li>
+            <li><input type="radio" ans="wrong" name="a" id="q3o4"><label for="q3o4">none of the above
+                </label></li>
+        </ul>
+        <input type="submit" class="submit">
+    </div>
+    <div class="quiz">
+        <h2>What does HTML Stands for</h2>
+        <ul class="options">
+            <li><input type="radio" ans="correct" name="a" id="q4o1"><label for="q4o1">HyperText Markup Language</label>
+            </li>
+            <li><input type="radio" ans="wrong" name="a" id="q4o2"><label for="q4o2">HyperText Markdown
+                    Language</label>
+            </li>
+            <li><input type="radio" ans="wrong" name="a" id="q4o3"><label for="q4o3">Hyper Loop Machine Language</label>
+            </li>
+            <li><input type="radio" ans="wrong" name="a" id="q4o4"><label for="q4o4">Hurricane Turbo Motor Lambhorgini
+                </label></li>
+        </ul>
+        <input type="submit" class="submit">
+    </div>
+    <div class="final">
+        <h2>You have answered <span class="point">0</span>/4 Questions correctly</h2>
+        <input type="button" onclick=window.location.reload() class="reload" value="Reload">
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

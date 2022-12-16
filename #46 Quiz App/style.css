@@ -1,0 +1,90 @@
+* {
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(214, 222, 234, 255);
+}
+
+.quiz {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: white;
+    display: none;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.quiz.active,
+.final.active {
+    display: flex;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-left: 50px;
+}
+
+.options li {
+    width: max-content;
+    padding: 10px;
+    accent-color: red;
+}
+
+.options li label {
+    margin-left: 6px;
+}
+
+.submit,
+.reload {
+    color: white;
+    height: 30px;
+    width: 100%;
+    outline: none;
+    background-color: rgba(150, 71, 163, 255);
+    border: none;
+}
+
+.submit:active {
+    background-color: rgba(134, 71, 163, 255);
+}
+
+.submit:disabled {
+    background-color: rgb(90, 0, 139);
+}
+
+.final {
+    background-color: white;
+    height: 80px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.final h2 {
+    margin-top: 0px;
+    padding: 10px;
+}
