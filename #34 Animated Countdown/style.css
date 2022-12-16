@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.counter.goout {
+    transition-duration: 1s;
+    transform: scale(0);
+    transition-timing-function: cubic-bezier(1, -0.98, .91, 1.03);
+}
+
+.counter.goout .number {
+    color: white
+}
+
+.counter h2 {
+    text-align: center;
+    z-index: 1;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+.number {
+    color: rgba(90, 164, 224, 255);
+    position: relative;
+    animation-duration: .7s;
+    font-size: 50px;
+    transform-origin: bottom;
+    transform: rotate(130deg);
+}
+
+.number.goin {
+    transform: rotate(0deg);
+    animation-name: goin;
+    animation-timing-function: cubic-bezier(.49, .18, .39, 1.53);
+    /*cubic-bezier(.71, -0.48, .39, 1.77)*/
+}
+
+.number.goout {
+    transform: rotate(-120deg);
+    animation-name: goout;
+    animation-timing-function: cubic-bezier(.79, -0.93, .69, 1.9);
+}
+
+.replay {
+    text-align: center;
+    display: none;
+}
+
+.display {
+    display: inline-block;
+}
+
+@keyframes goin {
+    from {
+        transform: rotate(120deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes goout {
+    from {
+        transform: rotate(0deg);
+
+    }
+
+    to {
+        transform: rotate(-120deg);
+    }
+}

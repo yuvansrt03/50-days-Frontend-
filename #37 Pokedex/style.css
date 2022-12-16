@@ -1,0 +1,107 @@
+* {
+    margin: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    list-style: none;
+    padding: 0px;
+}
+
+body {
+    height: max-content;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top left, #66ff99 0%, #00ffff 100%);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 50px;
+    margin-bottom: 100px;
+    font-family: 'Pokemon Solid', sans-serif;
+    color: rgb(255, 204, 3);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(44, 86, 160);
+    letter-spacing: 3px;
+}
+
+.container {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    height: max-content;
+    width: 70%;
+    top: 20%;
+
+}
+
+.pokemon {
+    height: 230px;
+    width: 150px;
+    background-color: rgba(215, 247, 219, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    margin: 13px;
+}
+
+.id {
+    color: white;
+    font-size: 12px;
+    margin: 5px;
+    background-color: grey;
+    border-radius: 9px;
+    padding: 2px;
+}
+
+img {
+    max-height: 100px;
+    width: 100px;
+    z-index: 2;
+    height: max-content;
+    transform: translateY(15%);
+}
+
+.img-frame {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px 10px 20px;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.type {
+    width: 100%;
+    list-style: none;
+    padding: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.type li {
+    font-size: 12px;
+    color: white;
+    padding: 4px;
+    margin-left: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}

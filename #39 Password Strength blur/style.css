@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 3px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-img {
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+}
+
+.container {
+    height: 350px;
+    width: 350px;
+    background-color: white;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+h3,
+h5,
+.submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit {
+    background-color: black;
+    color: white;
+    height: 30px;
+}
+
+h3 {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+h5 {
+    color: rgb(93, 93, 93);
+    margin-bottom: 15px;
+}
+
+.label {
+    font-size: 18px;
+    margin: 10px 0px 10px 0px;
+}
+
+.input {
+    box-sizing: border-box;
+    height: 35px;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.password {
+    margin-bottom: 30px;
+}
+
+.input:focus {
+    outline: NONE;
+    border-color: rgb(47, 0, 255);
+}
