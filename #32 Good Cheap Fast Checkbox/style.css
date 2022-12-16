@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3 {
+    margin: 30px;
+    font-size: 25px;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+li {
+    position: relative;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.sliders {
+    position: relative;
+    height: 30px;
+    width: 55px;
+    background-color: rgba(201, 201, 201, 255);
+    border-radius: 15px;
+    margin: 3px;
+    appearance: none;
+    margin-right: 20px;
+}
+
+.sliders:checked {
+    background-color: rgb(241, 11, 241);
+}
+
+.sliders:checked+.button {
+    animation-name: buttonright;
+    left: 55px
+}
+
+.button {
+    position: absolute;
+    background-color: white;
+    left: 25px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-name: buttonleft;
+}
+
+@keyframes buttonright {
+    0% {
+        left: 25px;
+    }
+
+    50% {
+        left: 40px;
+        transform: scale(1.2);
+    }
+
+    100% {
+        left: 55px;
+    }
+}
+
+@keyframes buttonleft {
+    0% {
+        left: 55px;
+    }
+
+    50% {
+        left: 35px;
+        transform: scale(1.2);
+    }
+
+    100% {
+        left: 25px;
+    }
+}

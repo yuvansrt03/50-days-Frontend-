@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div id="password">
+            <div class="passText"></div>
+            <i class="fa-solid fa-clipboard paste"></i>
+        </div>
+        <ul>
+            <li>Password length <input type="number" name="pass" id="passlen" name="points" step="1"></li>
+            <li>Include uppercase letters <input type="checkbox" id="upcase"></li>
+            <li>Include lowercase letters<input type="checkbox" id="lowcase"></li>
+            <li>Include Numbers<input type="checkbox" id="numcase"></li>
+            <li>Include symbols<input type="checkbox" id="symcase"></li>
+        </ul>
+        <button class="button" onclick="generate()">Generate Password</button>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

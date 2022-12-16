@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(48, 56, 141, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.container {
+    width: 330px;
+    background-color: rgba(31, 34, 81, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    padding: 10px;
+    margin-top: 15px;
+}
+
+#password {
+    position: relative;
+    background-color: rgba(18, 20, 47, 255);
+    border: none;
+    height: 50px;
+    width: 90%;
+    margin: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.paste {
+    position: absolute;
+    right: 0px;
+    background-color: rgba(48, 56, 141, 255);
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+}
+
+ul {
+    width: 90%;
+    list-style: none;
+    padding: 0px 20px;
+}
+
+li {
+    position: relative;
+    padding: 5px;
+}
+
+li input {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    cursor: pointer;
+}
+
+#passlen {
+    width: 30px;
+    color: black;
+}
+
+.button {
+    background-color: rgba(48, 56, 141, 255);
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    border: none;
+    width: 90%;
+}
+
+.button:active,
+.paste:active {
+    transform: scale(.98);
+}

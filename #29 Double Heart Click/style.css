@@ -1,0 +1,57 @@
+* {
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+h2 {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+}
+
+h4 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 400px;
+    background-color: red;
+    background-image: url('Images/zoro.jpg');
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    overflow: hidden;
+
+}
+
+.heart {
+    position: absolute;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation-name: scaleout;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    opacity: .7;
+}
+
+.heart::selection {
+    background: transparent;
+}
+
+@keyframes scaleout {
+    to {
+        transform: translate(-50%, -50%) scale(10);
+    }
+}
